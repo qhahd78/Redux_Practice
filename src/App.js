@@ -3,7 +3,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      <h1>hello react</h1>
+      <h1>hello minseoks</h1>
     </>
   );
 }
