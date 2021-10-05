@@ -1,7 +1,6 @@
 import * as types from '../action/ActionTypes';
 
 const initialState = {
-  color: 'black',
   number: 0,
 };
 
@@ -18,11 +17,6 @@ function counter(state = initialState, action) {
       return {
         ...state,
         number: state.number - 1,
-      };
-    case types.SET_COLOR:
-      return {
-        ...state,
-        color: action.color,
       };
     default:
       return state;

@@ -8,8 +8,3 @@ export const addCat = () => ({
 export const delCat = () => ({
   type: types.DEL_CAT,
 });
-
-export const setColor = color => ({
-  type: types.SET_COLOR,
-  color,
-});
