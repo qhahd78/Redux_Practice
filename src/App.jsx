@@ -1,13 +1,13 @@
 import React from 'react';
-import Main from './components/Main';
 import CounterContainers from './pages/CounterContainers';
+import CounterContainer2 from './pages/CounterContainer2';
 
 function App() {
   return (
     // eslint-disable-next-line react/jsx-filename-extension
     <>
-      <Main />
       <CounterContainers />
+      <CounterContainer2 />
     </>
   );
 }

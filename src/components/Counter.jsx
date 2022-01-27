@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-function Counter({ onIncrement, onDecrement, number }) {
+function Counter({ number, onIncrease, onDecrease }) {
   return (
     <div>
       <div>{number}</div>
-      <button onClick={onIncrement} type="button">
+      <button onClick={onIncrease} type="button">
         추가
       </button>
-      <button onClick={onDecrement} type="button">
+      <button onClick={onDecrease} type="button">
         감소
       </button>
     </div>
@@ -17,13 +17,13 @@ function Counter({ onIncrement, onDecrement, number }) {
 
 Counter.propTypes = {
   number: PropTypes.number,
-  onIncrement: PropTypes.func,
-  onDecrement: PropTypes.func,
+  onIncrease: PropTypes.func,
+  onDecrease: PropTypes.func,
 };
 
 Counter.defaultProps = {
   number: 0,
-  onIncrement: () => console.log('onIncrement not defined'),
-  onDecrement: () => console.log('onDecrement not defined'),
+  onIncrease: () => {},
+  onDecrease: () => {},
 };
 export default Counter;
